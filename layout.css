@@ -1,0 +1,85 @@
+/*Color palette: #efc667 (yellowish) and efc667 (orange) and ef6790 (pink)
+This is reminscent of the Half-Life 2 color palette, and was chosen in part by my friend*/
+
+html { /* There's probably a better way to do this, but I dare not mess with anything else */
+    background-image: url("pictures/hl2background.jpg");
+}
+
+/* Makes all the images align left and shrink down to 80x80px */
+img {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 1px;
+}
+
+/* Sets the rules for tables and rows */
+table, tr { 
+    font-size: 20px;
+    border: 4px solid; /* This affects the outer border which is yellow */
+    border-color: #efc667;
+    margin-bottom: 10px;
+    width:100%;
+    border-spacing: 3px; /*How far the borders are from each other */
+    background-color: rgb(61, 61, 61);
+}
+
+td {
+    font-size: 20px;
+    border: 2px solid; /* This affects the inner border which is orange */
+    color: #ef8267; 
+    text-align: center;
+    font-family: "eurostile", "OCR A", "Bank Gothic", "Impact", "Roboto Condensed", "Futura";
+}
+
+/* This class is only for the navigation bar- the first big roadblock in this website */
+.navbar table { 
+    font-size: 20px;
+    border: 4px solid;
+    border-color: #efc667;
+    width: 100%;
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: separate;
+}
+
+/* I initially had different plans for this div but it ended up just being used to change the width at will independent of the other tables */
+.greytotal {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+}
+
+/* Main header and its table class below */
+h1 { 
+    text-align:center;
+    color: #efc667;
+    background-color: #ef8267;
+    font-size: 50px;
+}
+
+.mainhead table {
+    width: 85%;
+    margin:auto;
+}
+
+/* Paragraph and <a> rules. Might be redundant in some areas but I don't want to risk messing everything up again */
+p {
+    text-align:center;
+    color: #efc667;
+    font-size: large;
+    font-family: "eurostile", "OCR A", "Bank Gothic", "Impact", "Futura";
+    width: 100%;
+}
+
+a { 
+    color:#efc667;
+    text-decoration: none;
+
+}
+
+/* This makes it so that when you hover over a link it turns pink. I wanted to use pink somewhere because it was one of the analogous colors, and this was appropriate. Also removes the underline. */
+a:hover { 
+    color: #ef6790;
+    text-decoration: none;
+}

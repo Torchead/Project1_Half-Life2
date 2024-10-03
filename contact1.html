@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> <!--Should I nest everything under <HTML>? Probably not... right?-->
+
+<head>
+    <title> The Chad Shack </title> <!--The Chad Shack is what I call my house. It's like Dimden's "Hotel" from the previous project.-->
+    <link href="layout.css" rel="stylesheet" /> <!--CSS source-->
+</head>
+
+
+<body>
+
+<!-- Upper margin navigation bar-->
+<div class="navbar">
+    <table>
+        <tr>
+            <td><a href="home1.html">Home</a></td>
+            <td><a href="about1.html">About</a></td>
+            <td><a href="contact1.html">Contact</a></td>
+        </tr>
+    </table>
+</div> <br>
+
+<!-- Opening Header-->
+ <div class="mainhead">
+    <table>
+        <tr>
+            <td>
+                <h1><strong>Welcome to the Shack!</strong></h1></td>
+            </td>
+        </tr>   
+    </table>
+</div>
+
+<!-- Brief about and instruct-->
+<div class=greytotal>
+    <table>
+        <tr>
+            <td>
+                <p>
+                    Here I will showcase some of my favorite sounds from Half-Life 2! <br>
+                    I use these to change my PC's system sounds and my phone's ringtones <br> <br> <br>
+                    Click each image to hear the sounds!
+                </p>
+            </td>
+        </tr>
+    </table>
+<!-- The soundbyte hub-->
+    <!--Combine button sound-->
+    <table>
+        <tr>
+            <td>
+                <p>
+                    <img src="pictures/combinehelmet.jpg" alt="the image isn't working, sorry" id="combineimage"/>
+                    <audio id="combinesound"><source src="sounds/combine_button1.wav" type="audio/wav"></audio>
+                    This sound is labeled as combine_button_1 in the game files. I use it for the notification sound on my PC <br>
+                    In the game it plays when opening some doors to facilities run by the enemy faction: the Combine! <br>
+                    On the left is a picture of one of them. Click on it!
+                </p>   
+            </td>
+        </tr>
+    <!--Friend online sound-->
+        <tr>
+            <td>
+                <p>
+                    <img src="pictures/social.png" alt="the image isn't working, sorry" id="socialimage"/>
+                    <audio id="socialsound"><source src="sounds/friend_online.wav" type="audio/wav"></audio>
+                    When Half-Life 2 was released, there was a menu option to contact your friends from within the game. <br>
+                    This feature is now deprecated, and has been replaced by the Friends & Chat feature in the Steam UI. <br>
+                    I have this sound set to play when I connect a device to my computer system.
+                </p>
+            </td>
+        </tr>
+    <!--Walkee disconnect sound-->
+        <tr>
+            <td>
+                <p>
+                    <img src="pictures/warning.png" alt="the image isn't working, sorry" id="connectimage"/>
+                    <audio id="connectsound"><source src="sounds/off2.wav" type="audio/wav"></audio>
+                    When the combine finish their voicelines they eminate this sound<br>
+                    It is supposed to sound like a walkee-talkee, which is what they use to communicate to each other. <br>
+                    I use this sound on my PC for system alerts.
+                </p>
+            </td>
+        </tr>
+    <!--Thank you Message-->
+        <tr>
+            <td>
+                <p>
+                    Thank you for checking out my page! More sounds are on the way!
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>        
+
+
+<!--Scource for javascript. Apparently this is needed after the elements are used.-->
+<script src="javastuff.js"></script>
+
+</body>
+
+
+
+<!--This was fun to make, although it took forever-->
+</html>
