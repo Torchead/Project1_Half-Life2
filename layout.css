@@ -3,6 +3,7 @@ This is reminscent of the Half-Life 2 color palette, and was chosen in part by m
 
 html { /* There's probably a better way to do this, but I dare not mess with anything else */
     background-image: url("pictures/hl2background.jpg");
+    background-size: cover;
 }
 
 /* Makes all the images align left and shrink down to 80x80px */
@@ -48,6 +49,23 @@ td {
     margin: 0 auto;
     width: 80%;
     padding: 20px;
+}
+
+.discord {
+    color: #5865F2;
+    font-size: 35px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #833AB4, #E1306C, #F77737);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    font-size: 35px;
+}
+
+.gmail {
+    color: #EA4335;
+    font-size: 35px;
 }
 
 /* Main header and its table class below */
