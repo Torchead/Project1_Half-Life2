@@ -30,7 +30,7 @@ td {
     border: 2px solid; /* This affects the inner border which is orange */
     color: #ef8267; 
     text-align: center;
-    font-family: "eurostile", "OCR A", "Bank Gothic", "Impact", "Roboto Condensed", "Futura";
+    font-family: "eurostile", "OCR A", "Bank Gothic", "Roboto Condensed", "Futura";
 }
 
 /* This class is only for the navigation bar- the first big roadblock in this website */
@@ -87,7 +87,7 @@ p {
     text-align:center;
     color: #efc667;
     font-size: large;
-    font-family: "eurostile", "OCR A", "Bank Gothic", "Impact", "Futura";
+    font-family: "eurostile", "OCR A", "Bank Gothic", "Futura";
     width: 100%;
 }
 
