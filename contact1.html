@@ -6,7 +6,6 @@
     <link href="layout.css" rel="stylesheet" /> <!--CSS source-->
 </head>
 
-
 <body>
 
 <!-- Upper margin navigation bar-->
@@ -25,15 +24,48 @@
     <table>
         <tr>
             <td>
-                <h1><strong>Contact the Shack</strong></h1></td>
+                <h1><strong>Contact the Shack</strong></h1>
             </td>
         </tr>   
     </table>
 </div>
 
-<!--Links
-They don't go anywhere, but they are colored to match the application-->
+<div class="greytotal">
+    <table>
+        <tr>
+            <td>
+                <p>Enter your netID below to find the secret message</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form id="passcodeForm">
+                    <label for="spydimar">NetID:</label>
+                    <input type="text" id="spydimar" required />
+                    <button type="submit">Access</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
 
+<script>
+    document.querySelector('#passcodeForm').addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent actual form submission
+        const passcode = document.getElementById('spydimar').value;
+        const correctPasscode = "pydimar"; // Specify the correct passcode
+
+        if (passcode === correctPasscode) {
+            // Display the message if the passcode is correct
+            document.body.innerHTML += '<h1>Welcome in Dr. Pydimarri.</h1>';
+        } else {
+            alert('Incorrect passcode. Please try again.');
+        }
+    });
+</script>
+
+<!--Links
+They don't go anywhere for now, but they are colored to match the application-->
 <div class="greytotal">
     <table>
         <tr>
